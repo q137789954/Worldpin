@@ -164,7 +164,7 @@ export default function Hero() {
   return (
     <section 
       ref={sectionRef} 
-      className="flex justify-center items-center h-[640px] max-xl:h-auto"
+      className="flex justify-center items-center h-[640px] max-xl:h-auto relative"
     >
       <div className="w-[1200px] h-[640px] relative max-xl:w-full max-xl:h-auto max-xl:px-20">
         <div className="w-full h-full">
@@ -249,8 +249,8 @@ export default function Hero() {
         </div>
       </div>
       {/* 导航按钮 */}
-      {/* <div className={clsx("swiper-button-prev absolute left-0 top-0 w-1/2 h-full cursor-pointer z-10", styles.buttonPrev)} />
-      <div className={clsx("swiper-button-next absolute right-0 top-0 w-1/2 h-full cursor-pointer z-10", styles.buttonNext)} /> */}
+      <div className={clsx("swiper-button-prev absolute left-0 top-0 w-1/2 h-full cursor-pointer z-10", styles.buttonPrev)} />
+      <div className={clsx("swiper-button-next absolute right-0 top-0 w-1/2 h-full cursor-pointer z-10", styles.buttonNext)} />
     </section>
   );
 }

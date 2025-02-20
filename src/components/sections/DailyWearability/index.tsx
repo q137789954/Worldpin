@@ -4,10 +4,11 @@ import { useMemo, useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
 import img1 from "./assets/img1.png";
 import img2 from "./assets/img2.png";
 import "swiper/css";
+import "swiper/css/effect-fade";
 
 const DailyWearability = () => {
   const list = useMemo(
@@ -85,9 +86,12 @@ const DailyWearability = () => {
           <Swiper
             spaceBetween={0}
             slidesPerView={1}
-            modules={[Autoplay]}
+            modules={[Autoplay, EffectFade]}
             loop={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 8000, disableOnInteraction: false }}
+            effect="fade"
+            fadeEffect={{ crossFade: true }}
+            speed={1500}
           >
             {list.map((item, index) => (
               <SwiperSlide key={index}>
