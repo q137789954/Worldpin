@@ -1,0 +1,6 @@
+.buttonPrev {
+    cursor: url(./assets/arrow-left.svg), auto;
+}
+.buttonNext {
+    cursor: url(./assets/arrow-right.svg), auto;
+}

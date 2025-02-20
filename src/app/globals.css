@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #0b0b0b;
+  font-family: Inter;
+}
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  ul, ol {
+    @apply list-none;
+  }
+
+  button {
+    @apply bg-none border-none cursor-pointer;
+  }
+}
+
+/* 自定义样式 */
+.section {
+  padding-bottom: 56px;
+  position: relative;
+  min-height: 56px; /* 确保有足够的高度 */
+}
+.section::after{
+  content: "";
+  height: 2px;
+  width: 1280px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 51.39%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  opacity: 0.1;
+}
+
+.dividing{
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 51.39%, rgba(255, 255, 255, 0) 100%);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}

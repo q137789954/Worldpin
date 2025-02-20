@@ -1,0 +1,67 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      spacing: {
+        '0': '0px',
+        '1': '1px',
+        '2': '2px',
+        '4': '4px',
+        '8': '8px',
+        '12': '12px',
+        '16': '16px',
+        '20': '20px',
+        '24': '24px',
+        '32': '32px',
+        '40': '40px',
+        '48': '48px',
+        '56': '56px',
+        '64': '64px',
+        '80': '80px',
+        '96': '96px',
+        '128': '128px',
+        '640': '640px',
+        '1200': '1200px',
+      },
+      fontSize: {
+        'xs': ['12px', { lineHeight: '16px' }],
+        'sm': ['14px', { lineHeight: '16px' }],
+        'base': ['16px', { lineHeight: '22px' }],
+        'lg': ['18px', { lineHeight: '25px' }],
+        'xl': ['20px', { lineHeight: '28px' }],
+        '2xl': ['24px', { lineHeight: '34px' }],
+        '3xl': ['30px', { lineHeight: '36px' }],
+        '4xl': ['36px', { lineHeight: '40px' }],
+        '5xl': ['48px', { lineHeight: '1' }],
+        '6xl': ['60px', { lineHeight: '1' }],
+        'heading-1': ['56px', { lineHeight: '60px', fontWeight: '500' }],
+        'heading-2': ['48px', { lineHeight: '1.2', fontWeight: '500' }],
+        'heading-3': ['32px', { lineHeight: '1.2', fontWeight: '500' }],
+        'heading-4': ['24px', { lineHeight: '28px', fontWeight: '500' }],
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '2px',
+        'md': '4px',
+        'lg': '8px',
+        'xl': '12px',
+        '2xl': '16px',
+        'full': '9999px',
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        roboto: ['Roboto']
+      },
+      colors: {
+        'text-secondary': 'rgba(190, 197, 210, 1)',
+        'text-white': 'rgba(255, 255, 255, 1)',
+      },
+    },
+  },
+  plugins: [],
+} 
