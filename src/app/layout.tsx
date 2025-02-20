@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar';
 // const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "科技产品官网",
-  description: "使用 Next.js, GSAP 和 ScrollTrigger 创建的科技产品官网",
+  title: "Worldpin",
+  description: "The Ultimate AI Wearable for Web3.",
 };
 
 export default function RootLayout({

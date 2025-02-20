@@ -16,14 +16,6 @@
   padding-right: 32px;
 }
 
-.logo{
-  font-family: Rubik;
-  font-weight: 600;
-  font-size: 24px;
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-}
-
 .links{
   display: flex;
   gap: 16px;

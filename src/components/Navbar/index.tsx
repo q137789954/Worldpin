@@ -6,6 +6,7 @@ import styles from "./Navbar.module.css";
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import logo_icon from '@/assets/logo.png';
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -29,8 +30,8 @@ export default function Navbar() {
   return (
     <nav ref={navRef} className={clsx(styles.navbar)}>
       <div className={styles.content}>
-        <Link href="/" className={styles.logo}>
-          Worldpin
+        <Link href="/">
+          <img className="h-[28px] w-[175px]" src={logo_icon.src} />
         </Link>
         <div className={styles.links}>
           <div className={clsx(styles.join, "text-secondary")}>
