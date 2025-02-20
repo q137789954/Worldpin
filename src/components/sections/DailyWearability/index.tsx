@@ -35,7 +35,6 @@ const DailyWearability = () => {
 
     // 获取滚动容器
     const scrollerElem = document.querySelector("#home_page");
-    console.log("scrollerElem:", scrollerElem);
     if (!scrollerElem) {
       console.warn("找不到 id 为 home_page 的滚动容器");
     }

@@ -121,7 +121,6 @@ const Need = (props: { windowHeight: number }) => {
         start: "bottom 60%",
         end: "bottom 0%",
         scrub: true,
-        markers: true, // 调试用，可根据需要删除
       },
     });
 
