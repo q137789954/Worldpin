@@ -24,9 +24,9 @@ const Footer = () => {
                 <Link className='w-32 h-32 cursor-pointer' href='https://t.me/worldpin_official' target="_blank">
                     <img className='w-full h-full' src={telegram_icon.src} />
                 </Link>
-                <div className='w-32 h-32 cursor-pointer'>
+                <Link className='w-32 h-32 cursor-pointer' href='https://discord.gg/YTwjtzcFW6' target="_blank">
                     <img className='w-full h-full' src={discord_icon.src} />
-                </div>
+                </Link>
             </div>
         </div>
     )

@@ -28,7 +28,7 @@ const Know = () => {
         icon: discord_icon.src,
         title: "Discord",
         subTitle: "Join our community",
-        link: ''
+        link: 'https://discord.gg/YTwjtzcFW6'
       },
     ];
   }, []);
