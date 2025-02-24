@@ -13,14 +13,16 @@ const Know = () => {
         icon: x_icon.src,
         title: "X",
         subTitle: "Join our community",
-      },
-      {
-        icon: discord_icon.src,
-        title: "Telegram",
-        subTitle: "Join our community",
+        link: 'https://x.com/Worldpin_AI'
       },
       {
         icon: telegram_icon.src,
+        title: "Telegram",
+        subTitle: "Join our community",
+        link: 'https://t.me/worldpin_official'
+      },
+      {
+        icon: discord_icon.src,
         title: "Discord",
         subTitle: "Join our community",
       },

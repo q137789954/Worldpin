@@ -34,12 +34,12 @@ export default function Navbar() {
           <img className="h-[28px] w-[175px]" src={logo_icon.src} />
         </Link>
         <div className={styles.links}>
-          <div className={clsx(styles.join, "text-secondary")}>
+          <Link className={clsx(styles.join, "text-secondary")} href='https://x.com/Worldpin_AI' target="_blank">
             Join Our Communities
-          </div>
-          <div className={clsx(styles.preorder, "text-primary")}>
+          </Link>
+          <Link className={clsx(styles.preorder, "text-primary")} href='https://t.me/worldpin_official' target="_blank">
             Preorder Coming Soon
-          </div>
+          </Link>
         </div>
       </div>
     </nav>

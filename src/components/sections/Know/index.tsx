@@ -3,6 +3,7 @@
 import { useMemo, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 import x_icon from "./assets/x_icon.png";
 import discord_icon from "./assets/discord_icon.png";
@@ -15,16 +16,19 @@ const Know = () => {
         icon: x_icon.src,
         title: "X",
         subTitle: "Join our community",
-      },
-      {
-        icon: discord_icon.src,
-        title: "Telegram",
-        subTitle: "Join our community",
+        link: 'https://x.com/Worldpin_AI',
       },
       {
         icon: telegram_icon.src,
+        title: "Telegram",
+        subTitle: "Join our community",
+        link: 'https://t.me/worldpin_official',
+      },
+      {
+        icon: discord_icon.src,
         title: "Discord",
         subTitle: "Join our community",
+        link: ''
       },
     ];
   }, []);
@@ -113,7 +117,7 @@ const Know = () => {
         {/* 右侧区域 */}
         <div ref={rightRef} className="flex-grow min-w-0 flex gap-20 items-end pb-8">
           {list.map((item) => (
-            <div key={item.title} className="know_card">
+            <Link key={item.title} href={item.link} className="know_card" target="_blank">
               <div>
                 <img className="w-64 h-64" src={item.icon} alt={item.title} />
               </div>
@@ -124,7 +128,7 @@ const Know = () => {
               >
                 {item.title}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

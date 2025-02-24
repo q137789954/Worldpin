@@ -1,7 +1,8 @@
 
 import discord_icon from './assets/discord.png';
 import telegram_icon from './assets/telegram.png';
-import x_icon from './assets/x.png'
+import x_icon from './assets/x.png';
+import Link from "next/link";
 
 const Footer = () => {
 
@@ -17,12 +18,12 @@ const Footer = () => {
                 <div className="cursor-pointer">Privacy Policy</div>
             </div>
             <div className='flex gap-16 items-center justify-between'>
-                <div className='w-32 h-32 cursor-pointer'>
+                <Link className='w-32 h-32 cursor-pointer' href='https://x.com/Worldpin_AI' target="_blank">
                     <img className='w-full h-full' src={x_icon.src} />
-                </div>
-                <div className='w-32 h-32 cursor-pointer'>
+                </Link>
+                <Link className='w-32 h-32 cursor-pointer' href='https://t.me/worldpin_official' target="_blank">
                     <img className='w-full h-full' src={telegram_icon.src} />
-                </div>
+                </Link>
                 <div className='w-32 h-32 cursor-pointer'>
                     <img className='w-full h-full' src={discord_icon.src} />
                 </div>
