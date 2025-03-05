@@ -34,7 +34,7 @@ export default function Navbar() {
           <img className="h-[28px] w-[175px]" src={logo_icon.src} />
         </Link>
         <div className={styles.links}>
-          <Link className={clsx(styles.join, "text-secondary")} href='https://x.com/TelegramAIAgent' target="_blank">
+          <Link className={clsx(styles.join, "text-secondary")} href='https://x.com/WorldpinAI' target="_blank">
             Join Our Communities
           </Link>
           <Link className={clsx(styles.preorder, "text-primary")} href='https://t.me/worldpin_official' target="_blank">

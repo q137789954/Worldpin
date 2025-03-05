@@ -13,7 +13,7 @@ const Know = () => {
         icon: x_icon.src,
         title: "X",
         subTitle: "Join our community",
-        link: 'https://x.com/TelegramAIAgent'
+        link: 'https://x.com/WorldpinAI'
       },
       {
         icon: telegram_icon.src,

@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className="cursor-pointer">Privacy Policy</div>
             </div>
             <div className='flex gap-16 items-center justify-between'>
-                <Link className='w-32 h-32 cursor-pointer' href='https://x.com/TelegramAIAgent' target="_blank">
+                <Link className='w-32 h-32 cursor-pointer' href='https://x.com/WorldpinAI' target="_blank">
                     <img className='w-full h-full' src={x_icon.src} />
                 </Link>
                 <Link className='w-32 h-32 cursor-pointer' href='https://t.me/worldpin_official' target="_blank">
