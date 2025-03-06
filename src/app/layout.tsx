@@ -8,6 +8,13 @@ import Navbar from '@/components/Navbar';
 export const metadata: Metadata = {
   title: "Worldpin",
   description: "The Ultimate AI Wearable for Web3.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh">
+      <head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png" />
+      </head>
       <body>
         <Navbar />
         {children}
